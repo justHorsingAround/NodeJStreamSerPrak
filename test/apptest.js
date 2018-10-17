@@ -9,6 +9,7 @@ describe("Server running test", function(){
         var url = "http://localhost:"+ port + "/echo";
         request(url, function(error, response, body) {
             expect(response.statusCode).to.equal(200);
+            done();
         });
     });
 });

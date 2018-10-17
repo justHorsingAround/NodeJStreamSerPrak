@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, 'static')));
 
 app.get('/echo', function(req, resp){
     var currentTime = dateTime.create().format('Y-m-d H:M:S');
-    resp.status(201);
+    resp.status(200);
     resp.send("The server responded at: " + currentTime);
 
 })
