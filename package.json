@@ -9,8 +9,10 @@
   "author": "Tamas Kiss",
   "license": "MIT",
   "dependencies": {
+    "aws-sdk": "^2.337.0",
     "body-parser": "^1.18.3",
     "chai": "^4.2.0",
+    "cluster": "^0.7.7",
     "crypto": "^1.0.1",
     "datetime": "0.0.3",
     "express": "^4.16.4",
