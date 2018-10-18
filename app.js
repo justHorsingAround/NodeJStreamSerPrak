@@ -17,8 +17,15 @@ app.get('/echo', function(req, resp){
     var currentTime = dateTime.create().format('Y-m-d H:M:S');
     resp.status(200);
     resp.send("The server responded at: " + currentTime);
-
 })
+
+app.get('/', function(req, resp){
+    fs.readFile('index.html', function(err, data) {
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.write(data);
+        res.end();
+    });
+});
 
 if(!module.parent){
     app.listen(port, function(){

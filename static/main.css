@@ -1,0 +1,10 @@
+#main-body {
+    color: aqua;
+    text-align: center;
+    align-content: center;
+    size: 20px;
+}
+
+body {
+    background-color: rgb(60, 56, 63);
+}
